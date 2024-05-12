@@ -4,6 +4,16 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+### Variables
+#
+# Logo key. Use Mod1 for Alt.h
+set $mod Mod4
+# Home row direction keys, like vim
+set $left j
+set $down k
+set $up i
+set $right l
+
 font xft:Carlito 12
 
 xwayland enable
@@ -14,7 +24,7 @@ xwayland enable
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-output eDP-1 mode 1920x1080@60.027Hz scale 0.80 scale_filter nearest render_bit_depth 10
+output eDP-1 mode 1920x1080@60.027Hz scale 1.0 scale_filter nearest render_bit_depth 10
 #output DP-1 mode 3840x2160@60.000Hz scale 1.0 scale_filter nearest render_bit_depth 10
 
 ### Output configuration
@@ -25,7 +35,7 @@ output eDP-1 mode 1920x1080@60.027Hz scale 0.80 scale_filter nearest render_bit_
 #output * bg #000000 solid_color
 #exec_always mpvpaper -o "no-audio loop --speed=.5" '*' /home/najam/wallpaper.mp4
 exec waypaper --restore --random
-bindsym $mod+W exec waypaper --restore --random
+bindsym $mod+w exec waypaper --restore --random
 
 
 # Colours the clients
@@ -52,16 +62,6 @@ default_border pixel 2px
 seat seat0 xcursor_theme default 8
 
 #floating_maximum_size 1000 x 1000
-
-### Variables
-#
-# Logo key. Use Mod1 for Alt.h
-set $mod Mod4
-# Home row direction keys, like vim
-set $left j
-set $down k
-set $up i
-set $right l
 
 # Your preferred terminal emulator
 set $term alacritty
@@ -339,7 +339,7 @@ exec firefox --new-window "https://to-do.live.com/tasks/inbox"
 exec firefox --new-window "https://calendar.google.com/calendar/u/0/r"
 #exec qutebrowser "https://raw.githubusercontent.com/qutebrowser/qutebrowser/master/doc/img/cheatsheet-big.png"
 #exec thunar
-exec pulseaudio-equalizer-gtk
+#exec pulseaudio-equalizer-gtk
 #exec tuxedo-control-center
 exec nm-applet	
 
