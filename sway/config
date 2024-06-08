@@ -40,7 +40,7 @@ bindsym $mod+w exec waypaper --restore --random
 
 # Colours the clients
 # class                 			border  		backgr. 		text    		indicator	child_border
-client.focused          		#ffffff 		#ffffff 		#000000 	#ffffff 	#ffffff
+client.focused          		#ffffff 		#ffffff 		#000000 	#000000	 #ffffff
 client.focused_inactive 	#000000 	#000000 	#ffffff 		#000000  	#000000
 client.unfocused        		#000000 	#000000 	#ffffff 		#000000  	#000000
 client.urgent           		#900000 	#900000 	#FF0000 	#900000  	#FF0000
