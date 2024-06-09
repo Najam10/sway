@@ -51,7 +51,7 @@ client.background       #1f0833
 
 #nordic theme dark to light #2E3440 #3B4252 #434C5E #4C566A
 
-gaps inner 15
+gaps inner 20
 #gaps top 10
 gaps outer 0
 smart_gaps off
